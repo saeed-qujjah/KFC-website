@@ -39,6 +39,7 @@ const reducerHandler = (state, action) => {
 
 export default function UseAxiosGet(url) {
   const [state, dispatch] = useReducer(reducerHandler, initialState);
+  console.log('sdss')
 
   useEffect(() => {
     if (!url) return dispatch({ type: `EMPTY` });

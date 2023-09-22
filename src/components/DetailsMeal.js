@@ -16,7 +16,7 @@ const DetailsMeal = ({ meal, onShowDetails }) => {
                 </div>
             </div>
             <div className='mt-[153px] relative bg-[#FFFFFF] rounded-md w-[398px] h-[330px]'>
-            <img src={menu1} className='h-[222px] absolute top-[-120px] left-[21%]' alt=''/>
+            <img src={meal.photo} className='h-[222px] absolute top-[-120px] left-[16%]' alt=''/>
             <p className='text-[var(--p-color)] font-bold text-center mt-[116px]'>{meal.name}</p>
             <p className='text-[#6A6E8E] text-[12px] font-light mt-[23px] text-center'>{meal.description}</p>
             <div className='absolute bottom-[-27px] left-[24px] w-[350px] h-[54px] flex justify-center items-center bg-[var(--red-color)] text-[#FFFFFF] rounded-md text-[14px]'>{meal.price} QAR</div>

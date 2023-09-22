@@ -15,7 +15,7 @@ const Bestsellers = () => {
             <div className='relative overflow-auto scroll-smooth no-scrollbar'>
                 <div className='mt-[57px] flex items-center relative'>
                     {bestsellers.map((img) => {
-                        return <BoxImg img={img} />;
+                        return <BoxImg key={Math.random()} img={img} />;
                     })}
                 </div>
             </div>
