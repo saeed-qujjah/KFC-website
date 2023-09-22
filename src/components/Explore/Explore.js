@@ -1,15 +1,20 @@
 import React, { useRef, useState } from 'react';
-import menu from '../../assests/images/explore-menu 1.png'
+import menu from '../../assests/images/explore-menu1.png'
 import arrowRight from '../../assests/icons/arrow-right.png'
 import right from '../../assests/icons/right.png'
 import left from '../../assests/icons/left-arrow(1).png'
 import BoxExplore from './BoxExplore';
 import DetailsMeal from '../DetailsMeal';
+import UseAxiosGet from '../../hooks/useAxiosGet';
+import { API } from '../../data/config';
 
 
 const Explore = () => {
     const ref = useRef()
     const [showDetails, setShowDetails] = useState(false)
+    const { data: menuData } = UseAxiosGet(API.EXPLORE_MENU);
+
+    console.log(menuData)
 
     const sideScroll = (
         element,
@@ -45,13 +50,9 @@ const Explore = () => {
             <img src={right} alt='' className='cursor-pointer w-[17px] absolute right-[66px] top-[59%]' onClick={() => { sideScroll(ref.current, 25, 100, 250); }} />
             <div className='relative overflow-auto scroll-smooth no-scrollbar' ref={ref}>
                 <div className='mt-[46px] flex items-center relative'>
-                    <BoxExplore onShowDetails={setShowDetails} />
-                    <BoxExplore />
-                    <BoxExplore />
-                    <BoxExplore />
-                    <BoxExplore />
-                    <BoxExplore />
-                    <BoxExplore />
+                    {menuData?.map((meal) => {
+                        return <BoxExplore meal={meal} onShowDetails={setShowDetails} />;
+                    })}
                 </div>
             </div>
         </div>

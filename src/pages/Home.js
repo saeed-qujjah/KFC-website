@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import KfsImg from '../assests/images/RedHotDuo_En_Qat_0802 1.png'
+import KfsImg from '../assests/images/RedHotDuo_En_Qat_08021.png'
 import Explore from '../components/Explore/Explore';
 import TopDeals from '../components/TopDeals/TopDeals';
 import Bestsellers from '../components/Bestsellers/Bestsellers';

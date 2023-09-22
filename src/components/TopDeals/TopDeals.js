@@ -1,4 +1,4 @@
-import topDeals from '../../assests/images/top-deals 1.png'
+import topDeals from '../../assests/images/top-deals1.png'
 import arrowRight from '../../assests/icons/arrow-right.png'
 import React, { useRef } from 'react';
 import right from '../../assests/icons/right.png'

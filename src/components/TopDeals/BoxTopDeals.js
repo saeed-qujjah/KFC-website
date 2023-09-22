@@ -1,5 +1,5 @@
 import React from 'react';
-import menu1 from "../../assests/images/571-Combo 1.png"
+import menu1 from "../../assests/images/571-Combo1.png"
 import heart from "../../assests/icons/Vector.png"
 
 const BoxTopDeals = () => {

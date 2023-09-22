@@ -1,8 +1,8 @@
 import React from 'react';
-import meal1 from '../../assests/images/Super_Dinner_Meal_english_0610 1.png'
-import meal2 from '../../assests/images/Super_Meal_english_0610 1.png'
-import meal3 from '../../assests/images/Twister_Box_english_0508 1.png'
-import meal4 from '../../assests/images/MightyZingerBox_QAT_En_1101 1.png'
+import meal1 from '../../assests/images/Super_Dinner_Meal_english_06101.png'
+import meal2 from '../../assests/images/Super_Meal_english_06101.png'
+import meal3 from '../../assests/images/Twister_Box_english_05081.png'
+import meal4 from '../../assests/images/MightyZingerBox_QAT_En_11011.png'
 import BoxImg from './BoxImg';
 
 const Bestsellers = () => {

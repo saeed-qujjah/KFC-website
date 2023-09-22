@@ -1,8 +1,8 @@
 import React from 'react';
-import kfc from '../../assests/images/banner_fav_order_En_1708 1.png'
-import kfc1 from '../../assests/images/banner_pickup_En_0508_4 1.png'
-import kfc2 from '../../assests/images/460-Combo 1.png'
-import kfc3 from '../../assests/images/Group 50.png'
+import kfc from '../../assests/images/banner_fav_order_En_17081.png'
+import kfc1 from '../../assests/images/banner_pickup_En_0508_41.png'
+import kfc2 from '../../assests/images/460-Combo1.png'
+import kfc3 from '../../assests/images/Group50.png'
 
 const About = () => {
     return (
