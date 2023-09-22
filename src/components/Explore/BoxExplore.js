@@ -1,9 +1,4 @@
 import React from 'react';
-import menu1 from "../../assests/images/ic_deals@3x02111.png"
-import menu2 from "../../assests/images/ic_for_one@3x02111.png"
-import menu3 from "../../assests/images/ic_for_sharing@3x02111.png"
-import menu4 from "../../assests/images/ic_side_and_desserts@3x021101.png"
-import menu5 from "../../assests/images/ic_beverages_kwt_02111.png"
 
 const BoxExplore = ({ meal, onShowDetails }) => {
     return (

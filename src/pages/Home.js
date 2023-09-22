@@ -6,9 +6,7 @@ import TopDeals from '../components/TopDeals/TopDeals';
 import Bestsellers from '../components/Bestsellers/Bestsellers';
 import About from '../components/About/About';
 import Footer from '../components/Footer/Footer';
-import { useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
-import UseAxiosGet from '../hooks/useAxiosGet';
 import { API } from '../data/config';
 import axios from 'axios';
 
@@ -19,11 +17,16 @@ const Home = () => {
     const location = useLocation();
     // const { data: menuData, isLoading } = UseAxiosGet(API.EXPLORE_MENU);
     const [menuData, setMenuData] = useState([])
-    const [isLoading, setIsLoading] = useState(true)
+    const [dealsData, setDealsData] = useState([])
+    const [exploreLoading, setExploreLoading] = useState(true)
+    const [dealsLoading, setDealsLoading] = useState(true)
+    const isLoading = dealsLoading || exploreLoading
+
+
     useEffect(() => {
-        axios.get(API.EXPLORE_MENU).then((res) => { setMenuData(res.data); setIsLoading(false) })
+        axios.get(API.EXPLORE_MENU).then((res) => { setMenuData(res.data); setExploreLoading(false) })
+        axios.get(API.TOP_DEALS).then((res) => { setDealsData(res.data); setDealsLoading(false) })
     }, [])
-    console.log('fdsfdf')
 
     useEffect(() => {
         pageRef.current.scrollIntoView({ behavior: "smooth" });
@@ -35,7 +38,7 @@ const Home = () => {
             <img src={KfsImg} alt='' />
             {isLoading ? <p className='mt-16 text-5xl text-[var(--p-color)] font-bold text-center'>Loading...</p> : <>
                 <Explore menuData={menuData} />
-                <TopDeals menuData={menuData} />
+                <TopDeals dealsData={dealsData} />
                 <Bestsellers />
                 <About />
                 <Footer />

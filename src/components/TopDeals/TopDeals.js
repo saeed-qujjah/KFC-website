@@ -4,44 +4,17 @@ import React, { useEffect, useRef, useState } from 'react';
 import right from '../../assests/icons/right-arrow(1).png'
 import left from '../../assests/icons/arrow.png'
 import BoxTopDeals from './BoxTopDeals';
-import { loadAction } from '../../store/load';
-import { useDispatch, useSelector } from 'react-redux';
-import { API } from '../../data/config';
-import UseAxiosGet from '../../hooks/useAxiosGet';
 import DetailsMeal from '../DetailsMeal';
 
-const TopDeals = ({ menuData }) => {
+const TopDeals = ({ dealsData }) => {
     const ref = useRef()
     const [showDetails, setShowDetails] = useState(false)
     const [showLeftArrow, setShowLeftArrow] = useState(false)
-    // const dispatch = useDispatch()
-    // const { data: mealsData, isLoading: dealLoading } = UseAxiosGet(API.EXPLORE_MENU);
-    // const isLoading = useSelector((state) => state.load.isLoading)
-    const sideScroll = (
-        element,
-        speed,
-        distance,
-        step
-    ) => {
-        let scrollAmount = 0;
-        console.log(ref.current.scrollLeft)
-        const slideTimer = setInterval(() => {
-            element.scrollLeft += step;
-            scrollAmount += Math.abs(step);
-            if (scrollAmount >= distance) {
-                clearInterval(slideTimer);
-            }
-        }, speed);
-    };
 
     useEffect(() => {
         if (!ref.current) return
         ref.current.scrollLeft = 0;
     }, [])
-    // useEffect(() => {
-    //     if (!dealLoading && !mealsData) return
-    //     dispatch(loadAction.changeDealsLState(dealLoading));
-    // }, [dispatch, dealLoading, mealsData])
 
     return (
         <div className='mt-[48px] w-[1280px] px-[117px] relative'>
@@ -60,7 +33,7 @@ const TopDeals = ({ menuData }) => {
             {!showLeftArrow && <img src={right} alt='' className='cursor-pointer w-[17px] absolute right-[64px] top-[60%]' onClick={() => { ref.current.scrollLeft += 23232; setShowLeftArrow(true) }} />}
             <div className='relative overflow-auto scroll-smooth no-scrollbar' ref={ref}>
                 <div className='mt-[156px] flex items-center relative'>
-                    {menuData?.map((meal) => {
+                    {dealsData?.map((meal) => {
                         return <BoxTopDeals key={meal.id} meal={meal} onShowDetails={setShowDetails} />;
                     })}
                 </div>

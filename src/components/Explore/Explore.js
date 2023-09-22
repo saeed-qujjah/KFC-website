@@ -5,18 +5,11 @@ import right from '../../assests/icons/right.png'
 import left from '../../assests/icons/left-arrow(1).png'
 import BoxExplore from './BoxExplore';
 import DetailsMeal from '../DetailsMeal';
-import UseAxiosGet from '../../hooks/useAxiosGet';
-import { API } from '../../data/config';
-import { loadAction } from '../../store/load';
-import { useDispatch, useSelector } from 'react-redux';
 
 
-const Explore = ({menuData}) => {
+const Explore = ({ menuData }) => {
     const ref = useRef()
-    // const dispatch = useDispatch()
     const [showDetails, setShowDetails] = useState(false)
-    // const isLoading = useSelector((state) => state.load.isLoading)
-    // const { data: menuData, exploreLoading } = UseAxiosGet(API.EXPLORE_MENU);
 
     const sideScroll = (
         element,
@@ -39,10 +32,6 @@ const Explore = ({menuData}) => {
         if (!ref.current) return
         ref.current.scrollLeft = 0;
     }, [])
-    // useEffect(() => {
-    //     if (!exploreLoading && !menuData) return
-    //     dispatch(loadAction.changeExploreLState(exploreLoading));
-    // }, [dispatch, exploreLoading, menuData])
 
     return (
         <div className='mt-[27px] w-[1280px] px-[117px] relative'>

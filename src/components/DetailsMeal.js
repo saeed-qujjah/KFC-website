@@ -1,5 +1,4 @@
 import React from 'react';
-import menu1 from "../assests/images/117-Combo2.png"
 
 const DetailsMeal = ({ meal, onShowDetails }) => {
     return (
