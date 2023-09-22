@@ -2,6 +2,21 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+  }
+}
+
 :root {
   --red-color: #E4002B;
   --white-color: #F5F5F7;
@@ -17,26 +32,27 @@
 }
 
 body::-webkit-scrollbar {
-  width: 1px !important;
+  width: 10px !important;
 }
 
 body::-webkit-scrollbar-thumb {
   border-radius: 20px !important;
-  background-color: var(--background-color) !important;
+  background-color: #ADAEB1 !important;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: thin;
 }
 
 body {
   margin: 0;
   margin-top: 6px;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik', sans-serif ;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  scrollbar-width: none;
+  /* scrollbar-width: none; */
   background-color: #ebebeb;
 }
