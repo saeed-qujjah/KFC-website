@@ -7,9 +7,9 @@ import kfc3 from '../../assests/images/Group 50.png'
 const About = () => {
     return (
         <div className='mt-[32px] w-[1280px] px-[117px] relative grid gap-x-[44px] gap-y-[76px]' style={{gridTemplateColumns:'repeat(auto-fill, minmax(500px, 1fr))'}}>
-            <img src={kfc} alt='' className='rounded-md w-[500px]'/>
-            <img src={kfc1} alt='' className='rounded-md w-[500px]'/>
-            <div className='w-[502px] h-[309px] bg-[#FFFFFF] rounded-md relative flex items-center' style={{fontFamily:'Ibarra Real Nova'}}>
+            <img src={kfc} alt='' className='cursor-pointer rounded-md w-[500px]'/>
+            <img src={kfc1} alt='' className='cursor-pointer rounded-md w-[500px]'/>
+            <div className='cursor-pointer w-[502px] h-[309px] bg-[#FFFFFF] rounded-md relative flex items-center' style={{fontFamily:'Ibarra Real Nova'}}>
                 <p className='w-[155px] ml-[22px] text-center text-[var(--p-color)] leading-[50px] text-[45px] font-bold'>Twister Box Meal</p>
                 <img src={kfc2} alt='' className='absolute right-0'/>
                 <div className='bg-[var(--red-color)] text-[#FFFFFF] rounded-full w-[44px] h-[44px] text-center pt-[14px] absolute top-[6px] left-[171px] text-[14px] font-semibold'>NEW</div>
@@ -19,7 +19,7 @@ const About = () => {
                     <span className='w-[12px] h-[100%] bg-[var(--red-color)]'></span>
                 </div>
             </div>
-            <img src={kfc3} alt='' className='rounded-md w-[500px]'/>
+            <img src={kfc3} alt='' className='cursor-pointer rounded-md w-[500px]'/>
         </div>
     );
 }

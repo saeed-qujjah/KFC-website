@@ -4,7 +4,7 @@ import heart from "../../assests/icons/Vector.png"
 
 const BoxTopDeals = () => {
     return (
-        <div className='min-w-[217px] mr-[42px] relative h-[251px] bg-[#FFFFFF] rounded-xl'>
+        <div className='cursor-pointer min-w-[217px] mr-[42px] relative h-[251px] bg-[#FFFFFF] rounded-xl'>
             <img src={menu1} className='w-[200px] absolute top-[-115px] left-3' alt=''/>
             <img src={heart} alt='' className='absolute w-[16px] top-[33px] right-[10px]'/>
             <div className='absolute left-0 top-[61px] px-[8px]'>
