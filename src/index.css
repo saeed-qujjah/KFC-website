@@ -4,15 +4,15 @@
 
 @layer utilities {
   @variants responsive {
-    /* Hide scrollbar for Chrome, Safari and Opera */
     .no-scrollbar::-webkit-scrollbar {
-        display: none;
+      display: none;
     }
 
-    /* Hide scrollbar for IE, Edge and Firefox */
     .no-scrollbar {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
     }
   }
 }
@@ -24,7 +24,7 @@
   --background-color: #F1F3F6;
   --border-color: #2F6605;
   --blue-color: #427EFF;
-  --div-color:#E2EBF4;
+  --div-color: #E2EBF4;
 }
 
 ::placeholder {
@@ -49,11 +49,10 @@ body::-webkit-scrollbar-thumb {
 
 body {
   margin: 0;
-  /* margin-top: 6px; */
-  font-family: 'Rubik', sans-serif ;
+  margin-top: 6px;
+  font-family: 'Rubik', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* scrollbar-width: none; */
   background-color: #ebebeb;
 }
 

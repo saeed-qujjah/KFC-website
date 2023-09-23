@@ -28,10 +28,10 @@ const TopDeals = () => {
                     <img className='w-[22px]' src={topDeals} alt='' />
                 </div>
                 <NavLink to='/KFC/ViewAll/Deals'>
-                <div className='flex items-center cursor-pointer'>
-                    <p className='mr-2 text-[14px] font-semibold text-[var(--blue-color)]'>View All</p>
-                    <img className='w-[13px]' src={arrowRight} alt='' />
-                </div>
+                    <div className='flex items-center cursor-pointer'>
+                        <p className='mr-2 text-[14px] font-semibold text-[var(--blue-color)]'>View All</p>
+                        <img className='w-[13px]' src={arrowRight} alt='' />
+                    </div>
                 </NavLink>
             </div>
             {showLeftArrow && <img src={left} alt='' className='cursor-pointer w-[17px] absolute left-[64px] top-[60%]' onClick={() => { ref.current.scrollLeft = 0; setShowLeftArrow(false) }} />}

@@ -7,7 +7,10 @@ const Kfc = () => {
     const location = useLocation();
 
     useEffect(() => {
-        pageRef.current.scrollIntoView({ behavior: "smooth" });
+        window.scrollTo({
+            top: -10,
+            behavior: "smooth",
+        });
     }, [location]);
 
     return (

@@ -39,6 +39,7 @@ const NavBarViewAll = () => {
             else dispatch(mealsAction.replaceExploreDataSearch(resultSearch))
         }
     };
+
     return (
         <div className='w-[883px] h-[56px] m-auto mt-[29px] px-[18px] rounded-[12px] flex justify-between items-center bg-[#FFFFFF]'>
             <ul className='flex w-[80%] justify-between items-center text-[#ADAEB1] text-[14px]'>

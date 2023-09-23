@@ -14,8 +14,8 @@ const Explore = () => {
     const ref = useRef()
     const menuData = useSelector((state) => state.meals.exploreData)
     const [showDetails, setShowDetails] = useState(false)
-    const [hasMoreLeft,setHasMoreLeft] = useState(false)
-    
+    const [hasMoreLeft, setHasMoreLeft] = useState(false)
+
     const sideScroll = (
         element,
         speed,
@@ -23,7 +23,7 @@ const Explore = () => {
         step
     ) => {
         let scrollAmount = 0;
-        if(element.scrollLeft + step <= 0) setHasMoreLeft(false)
+        if (element.scrollLeft + step <= 0) setHasMoreLeft(false)
         else setHasMoreLeft(true)
         const slideTimer = setInterval(() => {
             element.scrollLeft += step;
