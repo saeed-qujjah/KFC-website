@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/KFC-website/static/css/main.f7bcbd1a.css",
-    "main.js": "/KFC-website/static/js/main.98246e02.js",
+    "main.js": "/KFC-website/static/js/main.b4eaa5e5.js",
     "static/media/469-Combo2.png": "/KFC-website/static/media/469-Combo2.cc3e721c72fae95ad28c.png",
     "static/media/RedHotDuo_En_Qat_08021.png": "/KFC-website/static/media/RedHotDuo_En_Qat_08021.158203f777884a120f9a.png",
     "static/media/Group50.png": "/KFC-website/static/media/Group50.638046347092934020e2.png",
@@ -22,10 +22,10 @@
     "static/media/right-arrow(1).png": "/KFC-website/static/media/right-arrow(1).728fd3377cbc3e6ffe59.png",
     "index.html": "/KFC-website/index.html",
     "main.f7bcbd1a.css.map": "/KFC-website/static/css/main.f7bcbd1a.css.map",
-    "main.98246e02.js.map": "/KFC-website/static/js/main.98246e02.js.map"
+    "main.b4eaa5e5.js.map": "/KFC-website/static/js/main.b4eaa5e5.js.map"
   },
   "entrypoints": [
     "static/css/main.f7bcbd1a.css",
-    "static/js/main.98246e02.js"
+    "static/js/main.b4eaa5e5.js"
   ]
 }
