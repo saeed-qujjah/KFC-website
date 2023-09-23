@@ -56,3 +56,8 @@ body {
   /* scrollbar-width: none; */
   background-color: #ebebeb;
 }
+
+.active {
+  background-color: #FEF2F4;
+  color: var(--red-color);
+}

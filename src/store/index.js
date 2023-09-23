@@ -1,8 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import loadReducer from "./load";
+import activeReducer from "./active-ui"
+import mealsReducer from "./meals"
 
 const store = configureStore({
-  reducer: { load: loadReducer }
+  reducer: { active: activeReducer , meals: mealsReducer }
 });
 
 export default store;

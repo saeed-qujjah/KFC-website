@@ -5,10 +5,13 @@ import right from '../../assests/icons/right.png'
 import left from '../../assests/icons/left-arrow(1).png'
 import BoxExplore from './BoxExplore';
 import DetailsMeal from '../DetailsMeal';
+import { NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 
-const Explore = ({ menuData }) => {
+const Explore = () => {
     const ref = useRef()
+    const menuData = useSelector((state) => state.meals.exploreData)
     const [showDetails, setShowDetails] = useState(false)
 
     const sideScroll = (
@@ -41,10 +44,12 @@ const Explore = ({ menuData }) => {
                     <p className='mr-[8px] relative text-[14px] after:content-[""] after:absolute after:bottom-[-3px] after:left-0 after:h-[3px] after:w-[36px] after:bg-[var(--red-color)] font-bold text-[var(--p-color)]'>EXPLORE MENU</p>
                     <img className='w-[22px]' src={menu} alt='' />
                 </div>
-                <div className='flex items-center cursor-pointer'>
-                    <p className='mr-2 text-[14px] font-semibold text-[var(--blue-color)]'>View All</p>
-                    <img className='w-[13px]' src={arrowRight} alt='' />
-                </div>
+                <NavLink to='/KFC/ViewAll/Explore-menu'>
+                    <div className='flex items-center cursor-pointer'>
+                        <p className='mr-2 text-[14px] font-semibold text-[var(--blue-color)]'>View All</p>
+                        <img className='w-[13px]' src={arrowRight} alt='' />
+                    </div>
+                </NavLink>
             </div>
             <img src={left} alt='' className='cursor-pointer w-[17px] absolute left-[66px] top-[59%]' onClick={() => { sideScroll(ref.current, 25, 100, -250); }} />
             <img src={right} alt='' className='cursor-pointer w-[17px] absolute right-[66px] top-[59%]' onClick={() => { sideScroll(ref.current, 25, 100, 250); }} />
