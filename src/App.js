@@ -32,7 +32,7 @@ function App() {
           <Route path="ViewAll" element={<ViewAll />}>
             <Route path="Deals" element={<AllDeals />}></Route>
             <Route path="Explore-menu" element={<AllExplore />}></Route>
-            <Route path="Empty" element={<Empty />}></Route>
+            <Route path="Empty/:id" element={<Empty />}></Route>
           </Route>
         </Route>
       </Routes>

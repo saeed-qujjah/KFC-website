@@ -3,9 +3,10 @@ import NavBarViewAll from '../components/ViewAll/NavBarViewAll';
 import { Outlet } from 'react-router-dom';
 
 const ViewAll = () => {
+
     return (
         <div>
-            <NavBarViewAll/>
+            <NavBarViewAll />
             <Outlet></Outlet>
         </div>
     );

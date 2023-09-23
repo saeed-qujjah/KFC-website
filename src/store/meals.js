@@ -4,9 +4,11 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
     dealsData: [],
     exploreData: [],
+    dealsDataForSearch: [],
+    exploreDataForSerch: [],
     exploreLoading: true,
-    dealsLoading:true,
-    isLoading:true
+    dealsLoading: true,
+    isLoading: true
 };
 
 const mealsSlice = createSlice({
@@ -15,13 +17,21 @@ const mealsSlice = createSlice({
     reducers: {
         replaceDealsData(state, action) {
             state.dealsData = action.payload;
+            state.dealsDataForSearch = action.payload
             state.dealsLoading = false
-            if(state.exploreLoading === false) state.isLoading = false
+            if (state.exploreLoading === false) state.isLoading = false
         },
         replaceExploreData(state, action) {
             state.exploreData = action.payload;
+            state.exploreDataForSerch = action.payload;
             state.exploreLoading = false;
-            if(state.dealsLoading === false) state.isLoading = false
+            if (state.dealsLoading === false) state.isLoading = false
+        },
+        replaceExploreDataSearch(state, action) {
+            state.exploreData = action.payload;
+        },
+        replaceDealsDataSerch(state, action) {
+            state.dealsData = action.payload;
         },
     }
 });

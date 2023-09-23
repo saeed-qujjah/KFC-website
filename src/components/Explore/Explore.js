@@ -3,6 +3,7 @@ import menu from '../../assests/images/explore-menu1.png'
 import arrowRight from '../../assests/icons/arrow-right.png'
 import right from '../../assests/icons/right.png'
 import left from '../../assests/icons/left-arrow(1).png'
+import ligthLeft from '../../assests/icons/left-arrow.png'
 import BoxExplore from './BoxExplore';
 import DetailsMeal from '../DetailsMeal';
 import { NavLink } from 'react-router-dom';
@@ -13,7 +14,8 @@ const Explore = () => {
     const ref = useRef()
     const menuData = useSelector((state) => state.meals.exploreData)
     const [showDetails, setShowDetails] = useState(false)
-
+    const [hasMoreLeft,setHasMoreLeft] = useState(false)
+    
     const sideScroll = (
         element,
         speed,
@@ -21,7 +23,8 @@ const Explore = () => {
         step
     ) => {
         let scrollAmount = 0;
-        console.log(ref.current.scrollLeft)
+        if(element.scrollLeft + step <= 0) setHasMoreLeft(false)
+        else setHasMoreLeft(true)
         const slideTimer = setInterval(() => {
             element.scrollLeft += step;
             scrollAmount += Math.abs(step);
@@ -51,7 +54,7 @@ const Explore = () => {
                     </div>
                 </NavLink>
             </div>
-            <img src={left} alt='' className='cursor-pointer w-[17px] absolute left-[66px] top-[59%]' onClick={() => { sideScroll(ref.current, 25, 100, -250); }} />
+            <img src={hasMoreLeft ? left : ligthLeft} alt='' className='cursor-pointer w-[17px] absolute left-[66px] top-[59%]' onClick={() => { sideScroll(ref.current, 25, 100, -250); }} />
             <img src={right} alt='' className='cursor-pointer w-[17px] absolute right-[66px] top-[59%]' onClick={() => { sideScroll(ref.current, 25, 100, 250); }} />
             <div className='relative overflow-auto scroll-smooth no-scrollbar' ref={ref}>
                 <div className='mt-[46px] flex items-center relative'>
