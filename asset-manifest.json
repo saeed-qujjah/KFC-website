@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/KFC-website/static/css/main.f7bcbd1a.css",
+    "main.js": "/KFC-website/static/js/main.98246e02.js",
+    "static/media/469-Combo2.png": "/KFC-website/static/media/469-Combo2.cc3e721c72fae95ad28c.png",
+    "static/media/RedHotDuo_En_Qat_08021.png": "/KFC-website/static/media/RedHotDuo_En_Qat_08021.158203f777884a120f9a.png",
+    "static/media/Group50.png": "/KFC-website/static/media/Group50.638046347092934020e2.png",
+    "static/media/460-Combo1.png": "/KFC-website/static/media/460-Combo1.e64ebec4015881ea3872.png",
+    "static/media/banner_fav_order_En_17081.png": "/KFC-website/static/media/banner_fav_order_En_17081.38eb3ce7fcf83eca5de5.png",
+    "static/media/Twister_Box_english_05081.png": "/KFC-website/static/media/Twister_Box_english_05081.44e2c28b551c63e9dc41.png",
+    "static/media/Super_Dinner_Meal_english_06101.png": "/KFC-website/static/media/Super_Dinner_Meal_english_06101.185bf28800beeecf6fb2.png",
+    "static/media/MightyZingerBox_QAT_En_11011.png": "/KFC-website/static/media/MightyZingerBox_QAT_En_11011.ea1b6d5638ad6c7f342f.png",
+    "static/media/Super_Meal_english_06101.png": "/KFC-website/static/media/Super_Meal_english_06101.bc2aa9a87681d4a045f9.png",
+    "static/media/photo.jpg": "/KFC-website/static/media/photo.6a6b4803b342540b2b6c.jpg",
+    "static/media/right.png": "/KFC-website/static/media/right.4ffac86301d93519e71b.png",
+    "static/media/left-arrow(1).png": "/KFC-website/static/media/left-arrow(1).be6157fc19919115cbb1.png",
+    "static/media/photo_2023-09-23_15-17-26.jpg": "/KFC-website/static/media/photo_2023-09-23_15-17-26.a1c7c525af8586e2acf1.jpg",
+    "static/media/left-arrow.png": "/KFC-website/static/media/left-arrow.38931bef11c907b20501.png",
+    "static/media/search.png": "/KFC-website/static/media/search.8c70776ee37704e63800.png",
+    "static/media/arrow-right.png": "/KFC-website/static/media/arrow-right.90968c35602a63a77f08.png",
+    "static/media/arrow.png": "/KFC-website/static/media/arrow.a1e16f003c642ece5b68.png",
+    "static/media/right-arrow(1).png": "/KFC-website/static/media/right-arrow(1).728fd3377cbc3e6ffe59.png",
+    "index.html": "/KFC-website/index.html",
+    "main.f7bcbd1a.css.map": "/KFC-website/static/css/main.f7bcbd1a.css.map",
+    "main.98246e02.js.map": "/KFC-website/static/js/main.98246e02.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f7bcbd1a.css",
+    "static/js/main.98246e02.js"
+  ]
+}
